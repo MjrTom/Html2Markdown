@@ -7,15 +7,10 @@ version: 2
 updates:
   - package-ecosystem: "nuget"
     directory: "/" # Location of package manifests
+    cooldown:
+      default-days: 7
     schedule:
       interval: "monthly"
     labels:
       - "dependencies"
-    open-pull-requests-limit: 10
-
-  - package-ecosystem: "github-actions"
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "monthly"
-    labels:
-      - "dependencies"
+    open-pull-requests-limit: 30
