@@ -8,14 +8,7 @@ updates:
   - package-ecosystem: "nuget"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
     labels:
       - "dependencies"
-    open-pull-requests-limit: 10
-
-  - package-ecosystem: "github-actions"
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    labels:
-      - "dependencies"
+    open-pull-requests-limit: 100
